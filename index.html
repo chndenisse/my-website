@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denisse V. Rodriguez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('ribbon.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .nav {
+            background-color: #FDF5F5;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav button {
+            background-color: #E7A4B4;
+            color: white;
+            border: none;
+            padding: 15px 32px;
+            margin: 0 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .nav button.active {
+            background-color: #C71585;
+            color: white;
+        }
+
+        .nav button:hover {
+            background-color: #D874A0;
+        }
+        .content {
+            display: none;
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 20px auto;
+            position: relative;
+        }
+        .content.active {
+            display: block;
+        }
+        h2 {
+            color: #333;
+        }
+        .resume-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .resume-text {
+            flex: 2;
+        }
+        .resume-image {
+            flex: 1;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .resume-image img {
+            max-width: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .resume-section {
+            margin-top: 20px;
+        }
+        .resume-section h3 {
+            color: #333;
+        }
+        .resume-list {
+            list-style: none;
+            padding: 0;
+        }
+        .resume-list li {
+            margin: 8px 0;
+        }
+        .resume-list li strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <button onclick="showContent('home')">Home</button>
+        <button onclick="showContent('resume')">My Resume</button>
+        <button onclick="showContent('myself')">Myself</button>
+        <button onclick="showContent('family')">My Family</button>
+        <button onclick="showContent('favorites')">My Favorites</button>
+    </div>
+
+    <div id="home" class="content active">
+        <h2>Welcome to My Website!</h2>
+        <p>This is the homepage. Feel free to navigate through the sections above.</p>
+    </div>
+
+    <div id="resume" class="content">
+        <h2>My Resume</h2>
+        <p>Welcome to my resume page. Below are my personal details, educational background, experiences, achievements, and student organization involvement.</p>
+        <div class="resume-container">
+            <div class="resume-text">
+                <div class="resume-section">
+                    <h3>Denisse V. Rodriguez</h3>
+                    <ul class="resume-list">
+                        <li><strong>Phone Number:</strong> 639 277 917 747</li>
+                        <li><strong>Birthday:</strong> July 01, 2005</li>
+                        <li><strong>Civil Status:</strong> Single</li>
+                        <li><strong>Religion:</strong> Roman Catholic</li>
+                        <li><strong>Address:</strong> Imus City, Cavite</li>
+                        <li><strong>E-mail Address:</strong> denisse.rodriguez0701@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="resume-section">
+                    <h3>Educational Attainment</h3>
+                    <ul class="resume-list">
+                        <li><strong>Primary Education:</strong> Our Lady of the Pillar Catholic School, Inc. (2009 – 2012)</li>
+                        <li><strong>Secondary Education:</strong> Our Lady of Lourdes Academy Bacoor Cavite, Inc. (2015 – 2018)</li>
+                        <li><strong>Senior High School:</strong> Our Lady of the Pillar Catholic School, Inc. (2022 – 2024)</li>
+                        <li><strong>Tertiary Education:</strong> Cavite State University – Imus Campus (AY 2024 – Present)</li>
+                    </ul>
+                </div>
+                <div class="resume-section">
+                    <h3>Experience</h3>
+                    <ul class="resume-list">
+                        <li><strong>Hard Skills:</strong> Graphic Design</li>
+                        <li><strong>Soft Skills:</strong> Adaptability, Time Management, & Planning</li>
+                    </ul>
+                </div>
+                <div class="resume-section">
+                    <h3>Achievements</h3>
+                    <ul class="resume-list">
+                        <li><strong>2014 – 2016:</strong> Academic Awardee</li>
+                        <li><strong>2016:</strong> 4th place drawing contest at St. Peregrine Institute</li>
+                        <li><strong>2022 – 2024:</strong> Academic Awardee</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="resume-image">
+                <img src="resume.pic.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </div>
+
+    <div id="myself" class="content">
+        <h2>About Me</h2>
+        <p>Hello! I’m Denisse V. Rodriguez, a curious mind with a keyboard at my fingertips and a knack for turning ideas into reality. When I’m not immersed in code, I’m usually hunting for the perfect playlist to match my mood or laughing at a good comedy series. I’m a firm believer in lifelong learning and love sharing knowledge with others—whether it’s tech tips or life lessons.</p>
+        <div style="text-align: center; margin-top: 20px;">
+            <img src="myself.png" alt="Denisse V. Rodriguez" style="width: 100%;">
+        </div>
+    </div>
+
+    <div id="family" class="content">
+        <h2>My Family</h2>
+        <p>I come from a small but tightly-knit family that fills my life with positivity and love. My tatay Eduardo, is the family comedian who always knows how to lighten the mood, while my mom, Joseliza, is the heart of the family, making every day feel special. My sister, Eunice, are my only sister— and we’ve shared countless games together, late-night stay up, and the jokes we've shared over the years. Together, we make every moment memorable!</p>
+        <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+            <img src="family.pic1.jpg" alt="Family Photo 1" style="width: 45%; border-radius: 5px;">
+            <img src="family.pic.jpg" alt="Family Photo 2" style="width: 45%; border-radius: 5px;">
+        </div>
+    </div>
+
+    <div id="favorites" class="content">
+        <h2>My Favorites</h2>
+        <p>I’m a big fan of good food, great music, and enchanting stories. When it comes to food, I can’t resist the bold flavors of spicy dishes, the comforting taste of baked macaroni, or the simple joy of snacking on boiled peanuts. Palabok is one of my go-to Filipino dishes, and cookies are my ultimate sweet indulgence. Music is always playing in the background of my life, whether it’s mellow acoustic tunes, upbeat pop tracks, or soulful ballads that set the mood. And when I want to escape into a magical world, Studio Ghibli movies like Grave of the Fireflies, Whisper of the Heart, and Kiki's Delivery Service resonate with me for their emotional depth and beautiful storytelling. These little joys bring warmth and creativity into my life!</p>
+        <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+            <img src="food.png" alt="Food" style="width: 100px;">
+            <img src="music.png" alt="Music" style="width: 100px;">
+            <img src="movie.png" alt="Movie" style="width: 100px;">
+        </div>
+    </div>
+
+    <script>
+        function showContent(section) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => content.classList.remove('active'));
+
+            const selectedContent = document.getElementById(section);
+            selectedContent.classList.add('active');
+        }
+    </script>
+</body>
+</html>
